@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goat Breeds</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="header">
+    <img src="/images/goatlogo.webp" alt="GoatTrack Logo" className="logo" />
+    <h1>Goat Breeds</h1>
+  </header>
+  <main>
+    <div class="top-section">
+      <div class="dropdown-container">
+        <label for="breedSelect">Select breed:</label>
+        <select id="breedSelect" class="large-select">
+          <option value="">Select Breed</option>
+        </select>
+      </div>
+    </div>
+    <div class="content">
+      <div class="left">
+        <div id="loading" class="hidden">Loading...</div>
+        <div id="error" class="hidden"></div>
+        <div id="dataContainer" class="hidden">
+          <h2 id="breedTitle"></h2>
+          <div id="breedDescription"></div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="carousel">
+          <img id="carouselImage" src="images/goatfence.webp" alt="Goat Image">
+        </div>
+      </div>
+    </div>
+    <div class="names-section">
+      <h2>Popular Goat Names</h2>
+      <ul id="namesList"></ul>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 GoatTrack. All rights reserved.</p>
+  </footer>
+  <script src="js/goat-breeds.js"></script>
+</body>
+</html>

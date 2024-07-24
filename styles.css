@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #6B4226; /* Brown color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header .logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Add some space below the logo */
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FFD700; /* Gold color */
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  /* Navigation styles */
+  nav {
+    width: 100%;
+    background-color: #FFD700; /* Gold background */
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+  }
+  
+  nav li {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #6B4226; /* Brown color */
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  nav a:hover {
+    color: #e6be00; /* Hover color */
+    background-color: #ffe700; /* Hover background */
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav.active ul {
+      display: flex;
+    }
+  }
+  
+  /* Main content styles */
+  main {
+    background-color: #f5f5f5; /* Light grey */
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .top-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .dropdown-container {
+    text-align: center;
+  }
+  
+  .large-select {
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin: 20px auto;
+  }
+  
+  .left {
+    flex: 2;
+    margin-right: 20px;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel {
+    width: 100%;
+    max-width: 300px; /* Adjust max-width as needed */
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #dataContainer {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    color: #333;
+  }
+  
+  /* Names section styles */
+  .names-section {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+  }
+  
+  .names-section h2 {
+    margin-bottom: 15px;
+  }
+  
+  #namesList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #namesList li {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #6B4226; /* Brown color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .left, .right {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .carousel {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    .names-section {
+      width: 100%;
+      margin: 10px;
+    }
+  }
+  
+  /* Table styles */
+  .goat-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .goat-data-table th, .goat-data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .goat-data-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .goat-data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .goat-data-table tr:hover {
+    background-color: #ddd;
+  }
