@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             currentImageIndex = (currentImageIndex + 1) % images.length;
             carouselImage.src = images[currentImageIndex];
             console.log('Changing to image:', carouselImage.src);
-        }, 3000); // Change image every 3 seconds
+        }, 4000); // Change image every 3 seconds
     }
 
     // Start the carousel
